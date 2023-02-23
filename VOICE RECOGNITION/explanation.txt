@@ -1,0 +1,17 @@
+# how to convert speech to text using pttsx3 library
+
+properties we can change
+-- rate of sound
+--rate = engine.getProperty('rate')
+print(rate) 
+dafaultrate is 200 to change use setProperty
+
+# see what voices the library provides for us
+voices= engine.getProperty('voices')
+print(voices)
+
+returns a list 
+
+we can change by :
+engine.setProperty('voice', voices[1].id)
+
